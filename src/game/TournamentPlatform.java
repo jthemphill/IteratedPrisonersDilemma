@@ -22,6 +22,10 @@ public class TournamentPlatform {
 		players.add(new Friedman());
 		players.add(new Joss());
 		players.add(new Tester());
+		players.add(new Mastermind());
+		for (int i = 0; i < 10; ++i) {
+			players.add(new Flunky(i));
+		}
 		//Is always silent, making it a terrible player. Feel free to add it in as it often changes results, making Betrayer do much better.
 		players.add(new Silent());
 		
